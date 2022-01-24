@@ -45,17 +45,17 @@
                 $("#broadcastMsg").val(res.body);
             });
             //订阅，一般只有订阅的时候在返回
-            stomp.subscribe("/app/subscribe/1", function (res) {
-                $("#subscribeMsg").val(res.body);
-            });
-            //用户模式
-            stomp.subscribe("/user/queue/one", function (res) {
-                $("#userMsg").val(res.body);
-            });
-            //无APP
-            stomp.subscribe("/topic/app", function (res) {
-                $("#appMsg").val(res.body);
-            });
+            // stomp.subscribe("/app/subscribe/1", function (res) {
+            //     $("#subscribeMsg").val(res.body);
+            // });
+            // //用户模式
+            // stomp.subscribe("/user/queue/one", function (res) {
+            //     $("#userMsg").val(res.body);
+            // });
+            // //无APP
+            // stomp.subscribe("/topic/app", function (res) {
+            //     $("#appMsg").val(res.body);
+            // });
             setConnect(true);
         });
 
