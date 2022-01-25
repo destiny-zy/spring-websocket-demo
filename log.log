@@ -341,3 +341,969 @@ java.lang.IllegalStateException: executor not accepting a task
 2022-01-24 17:18:02,111 INFO  StompBrokerRelayMessageHandler - Stopped.
 2022-01-24 17:18:02,111 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
 2022-01-24 17:18:02,111 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 17:54:36,823 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2a334bac
+2022-01-24 17:54:36,823 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 17:54:36,843 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50ecde95, started on Mon Jan 24 17:54:35 CST 2022
+2022-01-24 17:54:36,873 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+2022-01-24 17:54:36,880 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 17:54:37,315 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 17:54:37,318 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 17:54:37,318 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 17:54:37,319 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 17:54:37,319 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 17:54:37,320 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 17:54:37,321 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 17:54:37,322 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 17:54:37,322 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 17:55:36,831 INFO  WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-01-24 18:02:07,919 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2a334bac] and 1 interceptors
+2022-01-24 18:02:07,923 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/info
+2022-01-24 18:02:07,932 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2a334bac] and 1 interceptors
+2022-01-24 18:02:07,938 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/848/q9m3njn7/websocket
+2022-01-24 18:02:07,949 TRACE DefaultHandshakeHandler - Processing request http://localhost:8081/websocket/848/q9m3njn7/websocket with headers=[host:"localhost:8081", connection:"Upgrade", pragma:"no-cache", cache-control:"no-cache", authorization:"Basic YWRtaW46YWRtaW4=", user-agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", upgrade:"websocket", origin:"http://localhost:8081", sec-websocket-version:"13", accept-encoding:"gzip, deflate, br", accept-language:"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d; _ga=GA1.1.1427344683.1606721226; Idea-ed62c9a4=ab95fd81-2bb3-4e75-b3f8-19d0c870b0ef; m=2258:Z3Vlc3Q6Z3Vlc3Q%253D; JSESSIONID=FCFD28F7C31E8F7CFBC68354C7983764", sec-websocket-key:"Q7riVyKUmS1YxZ5855PvJA==", sec-websocket-extensions:"permessage-deflate; client_max_window_bits"]
+2022-01-24 18:02:07,950 TRACE DefaultHandshakeHandler - Upgrading to WebSocket, subProtocol=null, extensions=[]
+2022-01-24 18:02:08,005 DEBUG LoggingWebSocketHandlerDecorator - New WebSocketServerSockJsSession[id=q9m3njn7]
+2022-01-24 18:02:08,011 TRACE NativeWebSocketSession - Sending TextMessage payload=[o], byteCount=1, last=true], StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:02:08,016 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session q9m3njn7
+2022-01-24 18:02:08,037 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[CONNECT
+ac..], byteCount=56, last=true] in WebSocketServerSockJsSession[id=q9m3njn7]
+2022-01-24 18:02:08,043 TRACE StompDecoder - Decoded CONNECT {accept-version=[1.1,1.0], heart-beat=[10000,10000]} session=null
+2022-01-24 18:02:08,044 TRACE StompSubProtocolHandler - From client: CONNECT user=admin session=q9m3njn7
+2022-01-24 18:02:43,193 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:02:43,193 DEBUG SimpleBrokerMessageHandler - Processing CONNECT user=admin session=q9m3njn7
+2022-01-24 18:02:43,194 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:02:43,194 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:02:43,196 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session q9m3njn7
+2022-01-24 18:02:43,196 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session q9m3njn7
+2022-01-24 18:02:43,202 TRACE StompEncoder - Encoding STOMP CONNECTED, headers={version=[1.1], heart-beat=[0,0], user-name=[admin]}
+2022-01-24 18:02:43,203 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session q9m3njn7
+2022-01-24 18:02:43,203 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 18:02:43,203 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 18:02:43,203 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["CONNECT..], byteCount=70, last=true], StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:02:43,203 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session q9m3njn7
+2022-01-24 18:02:43,206 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SUBSCRIBE
+..], byteCount=50, last=true] in WebSocketServerSockJsSession[id=q9m3njn7]
+2022-01-24 18:02:43,207 TRACE StompDecoder - Decoded SUBSCRIBE {id=[sub-0], destination=[/topic/broadcast]} session=null
+2022-01-24 18:02:43,207 TRACE StompSubProtocolHandler - From client: SUBSCRIBE /topic/broadcast id=sub-0 session=q9m3njn7
+2022-01-24 18:02:50,250 DEBUG SimpleBrokerMessageHandler - Processing SUBSCRIBE /topic/broadcast id=sub-0 session=q9m3njn7
+2022-01-24 18:03:08,204 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:03:08,204 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:03:08,204 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:03:08,205 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session q9m3njn7
+2022-01-24 18:03:08,205 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session q9m3njn7
+2022-01-24 18:03:09,654 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=66, last=true] in WebSocketServerSockJsSession[id=q9m3njn7]
+2022-01-24 18:03:09,655 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[14]} session=null
+2022-01-24 18:03:09,655 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=q9m3njn7
+2022-01-24 18:03:09,656 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=q9m3njn7, lookupDestination='/broadcast'
+2022-01-24 18:04:05,758 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:04:05,760 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:04:05,760 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:04:05,760 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session q9m3njn7
+2022-01-24 18:04:05,761 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session q9m3njn7
+2022-01-24 18:04:05,762 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:04:05,762 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:04:05,803 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 18:04:05,803 DEBUG WebSocketServerSockJsSession - Closing SockJS session q9m3njn7 with CloseStatus[code=1001, reason=null]
+2022-01-24 18:04:05,804 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='c[1001,""]'
+2022-01-24 18:04:05,804 TRACE NativeWebSocketSession - Sending TextMessage payload=[c[1001,""]], byteCount=10, last=true], StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:04:05,804 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session q9m3njn7
+2022-01-24 18:04:05,804 DEBUG NativeWebSocketSession - Closing StandardWebSocketSession[id=630eead6-f4bd-fc36-4193-02749635797f, uri=ws://localhost:8081/websocket/848/q9m3njn7/websocket]
+2022-01-24 18:04:05,805 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=q9m3njn7] closed with CloseStatus[code=1001, reason=null]
+2022-01-24 18:04:05,805 DEBUG SubProtocolWebSocketHandler - Clearing session q9m3njn7
+2022-01-24 18:04:05,806 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=q9m3njn7
+2022-01-24 18:04:05,806 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 18:04:05,807 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 18:04:05,807 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 18:04:05,807 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 18:04:05,807 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 18:04:05,807 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 18:04:05,807 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 18:04:05,807 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 18:04:05,815 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@5c42f637]
+2022-01-24 18:04:05,816 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=true]
+2022-01-24 18:05:22,337 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b
+2022-01-24 18:05:22,337 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 18:05:22,350 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2101b44a, started on Mon Jan 24 18:05:20 CST 2022
+2022-01-24 18:05:22,372 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+2022-01-24 18:05:22,376 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 18:05:22,632 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 18:05:22,632 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 18:05:22,632 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 18:05:22,632 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 18:05:22,632 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 18:05:22,632 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 18:05:22,633 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 18:05:22,633 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 18:05:22,633 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 18:06:22,342 INFO  WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-01-24 18:06:38,726 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b] and 1 interceptors
+2022-01-24 18:06:38,727 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/info
+2022-01-24 18:06:38,734 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b] and 1 interceptors
+2022-01-24 18:06:38,739 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/583/8mw07t67/websocket
+2022-01-24 18:06:38,745 TRACE DefaultHandshakeHandler - Processing request http://localhost:8081/websocket/583/8mw07t67/websocket with headers=[host:"localhost:8081", connection:"Upgrade", pragma:"no-cache", cache-control:"no-cache", authorization:"Basic YWRtaW46YWRtaW4=", user-agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", upgrade:"websocket", origin:"http://localhost:8081", sec-websocket-version:"13", accept-encoding:"gzip, deflate, br", accept-language:"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d; _ga=GA1.1.1427344683.1606721226; Idea-ed62c9a4=ab95fd81-2bb3-4e75-b3f8-19d0c870b0ef; m=2258:Z3Vlc3Q6Z3Vlc3Q%253D; JSESSIONID=07AA5C40449BA312D59E6B8B6C7ECF9C", sec-websocket-key:"CFm+B9ENopeXkwA2oPIXGA==", sec-websocket-extensions:"permessage-deflate; client_max_window_bits"]
+2022-01-24 18:06:38,746 TRACE DefaultHandshakeHandler - Upgrading to WebSocket, subProtocol=null, extensions=[]
+2022-01-24 18:06:38,788 DEBUG LoggingWebSocketHandlerDecorator - New WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:06:38,792 TRACE NativeWebSocketSession - Sending TextMessage payload=[o], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:06:38,796 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:06:38,810 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[CONNECT
+ac..], byteCount=56, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:06:38,814 TRACE StompDecoder - Decoded CONNECT {accept-version=[1.1,1.0], heart-beat=[10000,10000]} session=null
+2022-01-24 18:06:38,815 TRACE StompSubProtocolHandler - From client: CONNECT user=admin session=8mw07t67
+2022-01-24 18:06:44,095 DEBUG SimpleBrokerMessageHandler - Processing CONNECT user=admin session=8mw07t67
+2022-01-24 18:06:44,101 TRACE StompEncoder - Encoding STOMP CONNECTED, headers={version=[1.1], heart-beat=[0,0], user-name=[admin]}
+2022-01-24 18:06:44,102 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:06:44,102 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 18:06:44,102 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 18:06:44,102 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["CONNECT..], byteCount=70, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:06:44,103 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:06:44,106 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SUBSCRIBE
+..], byteCount=50, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:06:44,107 TRACE StompDecoder - Decoded SUBSCRIBE {id=[sub-0], destination=[/topic/broadcast]} session=null
+2022-01-24 18:06:44,107 TRACE StompSubProtocolHandler - From client: SUBSCRIBE /topic/broadcast id=sub-0 session=8mw07t67
+2022-01-24 18:06:45,071 DEBUG SimpleBrokerMessageHandler - Processing SUBSCRIBE /topic/broadcast id=sub-0 session=8mw07t67
+2022-01-24 18:06:49,806 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=63, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:06:49,807 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[11]} session=null
+2022-01-24 18:06:49,807 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=8mw07t67
+2022-01-24 18:11:15,691 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=8mw07t67, lookupDestination='/broadcast'
+2022-01-24 18:11:15,691 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:11:15,692 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:11:15,694 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:11:15,694 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:11:15,695 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:11:15,700 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:11:15,702 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:11:15,750 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@359a926f]
+2022-01-24 18:11:19,871 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 18:11:19,872 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 18:11:19,874 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[8mw07t67-0]}
+2022-01-24 18:11:19,875 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:11:19,875 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:11:19,875 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:11:19,875 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 18:11:19,875 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:11:19,875 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:11:28,717 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=65, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:11:28,717 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[13]} session=null
+2022-01-24 18:11:28,717 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=8mw07t67
+2022-01-24 18:11:28,718 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=8mw07t67, lookupDestination='/broadcast'
+2022-01-24 18:19:40,232 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:19:40,233 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:19:40,233 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:19:40,233 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:19:40,233 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:19:40,233 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@142f847f]
+2022-01-24 18:19:40,234 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:23:57,267 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:24:17,495 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 18:24:17,495 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 18:24:17,495 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:24:17,495 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:24:17,495 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:24:17,496 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 18:24:17,496 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[8mw07t67-1]}
+2022-01-24 18:24:17,496 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:24:17,496 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:24:17,496 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:24:17,496 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:24:17,496 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:24:17,496 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:24:17,497 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:24:42,498 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:24:42,498 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:24:42,498 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:24:42,498 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:24:42,498 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:24:43,929 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=65, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:24:43,930 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[13]} session=null
+2022-01-24 18:24:43,930 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=8mw07t67
+2022-01-24 18:24:43,931 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=8mw07t67, lookupDestination='/broadcast'
+2022-01-24 18:28:29,155 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:28:29,155 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:28:29,155 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:28:29,155 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:28:29,156 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:28:29,156 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:28:29,156 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:28:29,157 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@47ea6be4]
+2022-01-24 18:28:31,410 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 18:28:31,410 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 18:28:31,411 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 18:28:31,411 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[8mw07t67-2]}
+2022-01-24 18:28:31,411 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:28:31,411 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:28:31,411 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:28:31,412 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:28:31,412 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:28:56,412 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:28:56,412 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:28:56,412 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:28:56,412 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:28:56,412 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:29:04,216 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=65, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:29:04,217 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[13]} session=null
+2022-01-24 18:29:04,217 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=8mw07t67
+2022-01-24 18:29:04,218 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=8mw07t67, lookupDestination='/broadcast'
+2022-01-24 18:33:43,066 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:33:43,067 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:33:43,067 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:33:43,067 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:33:43,068 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:33:43,068 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:33:43,068 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:33:43,068 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@2ee563cd]
+2022-01-24 18:34:04,737 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 18:34:04,737 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 18:34:04,738 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 18:34:04,738 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[8mw07t67-3]}
+2022-01-24 18:34:04,738 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:34:04,739 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:34:04,739 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:34:04,739 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:34:04,739 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:34:12,928 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=65, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:34:12,928 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[13]} session=null
+2022-01-24 18:34:12,928 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=8mw07t67
+2022-01-24 18:34:12,929 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=8mw07t67, lookupDestination='/broadcast'
+2022-01-24 18:35:29,153 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:35:29,154 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:35:29,154 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:35:29,154 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:35:29,154 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:35:29,154 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:35:29,154 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@3b01c6de]
+2022-01-24 18:35:29,154 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:35:30,699 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 18:35:30,700 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 18:35:30,700 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 18:35:30,701 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[8mw07t67-4]}
+2022-01-24 18:35:30,701 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 8mw07t67
+2022-01-24 18:35:30,701 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:35:30,701 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 18:35:30,701 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:35:30,701 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 8mw07t67
+2022-01-24 18:35:34,848 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=65, last=true] in WebSocketServerSockJsSession[id=8mw07t67]
+2022-01-24 18:35:34,849 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[13]} session=null
+2022-01-24 18:35:34,849 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=8mw07t67
+2022-01-24 18:37:07,849 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:37:11,638 INFO  WebSocketMessageBrokerStats - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 21], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6], sockJsScheduler[pool size = 8, active threads = 2, queued tasks = 0, completed tasks = 366]
+2022-01-24 18:37:11,638 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:37:11,638 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=f888ddc7-d463-687b-8519-64e3f7e5525c, uri=ws://localhost:8081/websocket/583/8mw07t67/websocket]
+2022-01-24 18:37:49,065 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=8mw07t67, lookupDestination='/broadcast'
+2022-01-24 18:37:49,066 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 18:37:49,066 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=8mw07t67] closed with CloseStatus[code=1006, reason=null]
+2022-01-24 18:37:49,066 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 18:37:49,066 DEBUG SubProtocolWebSocketHandler - Clearing session 8mw07t67
+2022-01-24 18:37:49,066 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@519d384a]
+2022-01-24 18:37:50,024 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 18:37:50,024 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 18:37:50,024 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 18:37:50,024 DEBUG SubProtocolWebSocketHandler - No session for GenericMessage [payload=byte[4], headers={simpMessageType=MESSAGE, simpSubscriptionId=sub-0, contentType=text/plain;charset=UTF-8, simpSessionId=8mw07t67, simpDestination=/topic/broadcast}]
+2022-01-24 18:37:50,808 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=8mw07t67
+2022-01-24 18:37:50,809 DEBUG SubProtocolWebSocketHandler - No session for GenericMessage [payload=byte[0], headers={simpMessageType=DISCONNECT_ACK, simpDisconnectMessage=GenericMessage [payload=byte[0], headers={simpMessageType=DISCONNECT, stompCommand=DISCONNECT, simpSessionAttributes={org.springframework.messaging.simp.SimpAttributes.COMPLETED=true}, simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=8mw07t67}], simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=8mw07t67}]
+2022-01-24 18:37:50,811 DEBUG WebSocketServerSockJsSession - Terminating connection after failure to send message to client
+java.io.IOException: java.net.SocketTimeoutException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:315)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:223)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.writeFrameInternal(WebSocketServerSockJsSession.java:224)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.writeFrame(AbstractSockJsSession.java:326)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.sendHeartbeat(AbstractSockJsSession.java:259)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession$HeartbeatTask.run(AbstractSockJsSession.java:479)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: null
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer$1.completed(WsRemoteEndpointImplServer.java:98)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer$1.completed(WsRemoteEndpointImplServer.java:92)
+	at org.apache.tomcat.util.net.SocketWrapperBase$VectoredIOCompletionHandler.completed(SocketWrapperBase.java:1063)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1511)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1015)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1426)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1352)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1323)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:90)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:499)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:309)
+	... 18 common frames omitted
+2022-01-24 18:37:58,741 DEBUG DefaultSockJsService - Closed 1 sessions: [8mw07t67]
+2022-01-24 18:40:04,396 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b] and 1 interceptors
+2022-01-24 18:40:04,396 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/info
+2022-01-24 18:40:04,404 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b] and 1 interceptors
+2022-01-24 18:40:04,404 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/424/yn5papcv/websocket
+2022-01-24 18:40:04,405 TRACE DefaultHandshakeHandler - Processing request http://localhost:8081/websocket/424/yn5papcv/websocket with headers=[host:"localhost:8081", connection:"Upgrade", pragma:"no-cache", cache-control:"no-cache", authorization:"Basic YWRtaW46YWRtaW4=", user-agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", upgrade:"websocket", origin:"http://localhost:8081", sec-websocket-version:"13", accept-encoding:"gzip, deflate, br", accept-language:"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d; _ga=GA1.1.1427344683.1606721226; Idea-ed62c9a4=ab95fd81-2bb3-4e75-b3f8-19d0c870b0ef; m=2258:Z3Vlc3Q6Z3Vlc3Q%253D; JSESSIONID=FE5A6277E2C366E54D4D69E4E742D255", sec-websocket-key:"BnqRx1/kx/QfKJe9aBSevQ==", sec-websocket-extensions:"permessage-deflate; client_max_window_bits"]
+2022-01-24 18:40:04,405 TRACE DefaultHandshakeHandler - Upgrading to WebSocket, subProtocol=null, extensions=[]
+2022-01-24 18:40:04,407 DEBUG LoggingWebSocketHandlerDecorator - New WebSocketServerSockJsSession[id=yn5papcv]
+2022-01-24 18:40:04,407 TRACE NativeWebSocketSession - Sending TextMessage payload=[o], byteCount=1, last=true], StandardWebSocketSession[id=d9645232-1b6b-2c12-1c4d-b678e4280de8, uri=ws://localhost:8081/websocket/424/yn5papcv/websocket]
+2022-01-24 18:40:04,407 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session yn5papcv
+2022-01-24 18:40:04,411 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[CONNECT
+ac..], byteCount=56, last=true] in WebSocketServerSockJsSession[id=yn5papcv]
+2022-01-24 18:40:59,282 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:40:59,282 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:40:59,282 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=d9645232-1b6b-2c12-1c4d-b678e4280de8, uri=ws://localhost:8081/websocket/424/yn5papcv/websocket]
+2022-01-24 18:40:59,283 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session yn5papcv
+2022-01-24 18:40:59,283 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session yn5papcv
+2022-01-24 18:40:59,283 TRACE StompDecoder - Decoded CONNECT {accept-version=[1.1,1.0], heart-beat=[10000,10000]} session=null
+2022-01-24 18:41:28,898 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 18:41:31,186 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 18:41:31,187 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=d9645232-1b6b-2c12-1c4d-b678e4280de8, uri=ws://localhost:8081/websocket/424/yn5papcv/websocket]
+2022-01-24 18:42:11,194 TRACE StompSubProtocolHandler - From client: CONNECT user=admin session=yn5papcv
+2022-01-24 19:02:15,563 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=yn5papcv] closed with CloseStatus[code=1006, reason=null]
+2022-01-24 19:02:15,563 DEBUG WebSocketServerSockJsSession - Closing SockJS session yn5papcv with CloseStatus[code=3000, reason=Go away!]
+2022-01-24 19:02:15,563 DEBUG SubProtocolWebSocketHandler - Clearing session yn5papcv
+2022-01-24 19:02:26,644 DEBUG SimpleBrokerMessageHandler - Processing CONNECT user=admin session=yn5papcv
+2022-01-24 19:02:29,613 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=yn5papcv
+2022-01-24 19:02:26,645 DEBUG WebSocketServerSockJsSession - Terminating connection after failure to send message to client
+java.io.IOException: java.net.SocketTimeoutException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:315)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:250)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:223)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:49)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at org.springframework.web.socket.sockjs.transport.session.WebSocketServerSockJsSession.writeFrameInternal(WebSocketServerSockJsSession.java:224)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.writeFrame(AbstractSockJsSession.java:326)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession.sendHeartbeat(AbstractSockJsSession.java:259)
+	at org.springframework.web.socket.sockjs.transport.session.AbstractSockJsSession$HeartbeatTask.run(AbstractSockJsSession.java:479)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: null
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer$1.completed(WsRemoteEndpointImplServer.java:98)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer$1.completed(WsRemoteEndpointImplServer.java:92)
+	at org.apache.tomcat.util.net.SocketWrapperBase$VectoredIOCompletionHandler.completed(SocketWrapperBase.java:1063)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1511)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1015)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1426)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1352)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1323)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:90)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:499)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:309)
+	... 18 common frames omitted
+2022-01-24 19:02:29,613 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=yn5papcv] closed with CloseStatus[code=3000, reason=Go away!]
+2022-01-24 19:02:29,614 DEBUG SubProtocolWebSocketHandler - Clearing session yn5papcv
+2022-01-24 19:02:29,614 DEBUG SubProtocolWebSocketHandler - No session for GenericMessage [payload=byte[0], headers={simpMessageType=CONNECT_ACK, simpConnectMessage=GenericMessage [payload=byte[0], headers={simpMessageType=CONNECT, stompCommand=CONNECT, nativeHeaders={accept-version=[1.1,1.0], heart-beat=[10000,10000]}, simpSessionAttributes={org.springframework.messaging.simp.SimpAttributes.COMPLETED=true}, simpHeartbeat=[J@379b4e2b, simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=yn5papcv}], simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=yn5papcv}]
+2022-01-24 19:02:29,614 DEBUG SubProtocolWebSocketHandler - No session for GenericMessage [payload=byte[0], headers={simpMessageType=DISCONNECT_ACK, simpDisconnectMessage=GenericMessage [payload=byte[0], headers={simpMessageType=DISCONNECT, stompCommand=DISCONNECT, simpSessionAttributes={org.springframework.messaging.simp.SimpAttributes.COMPLETED=true}, simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=yn5papcv}], simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=yn5papcv}]
+2022-01-24 19:02:29,615 DEBUG DefaultSockJsService - Closed 1 sessions: [yn5papcv]
+2022-01-24 19:02:30,540 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=yn5papcv
+2022-01-24 19:02:30,541 DEBUG SubProtocolWebSocketHandler - No session for GenericMessage [payload=byte[0], headers={simpMessageType=DISCONNECT_ACK, simpDisconnectMessage=GenericMessage [payload=byte[0], headers={simpMessageType=DISCONNECT, stompCommand=DISCONNECT, simpSessionAttributes={org.springframework.messaging.simp.SimpAttributes.COMPLETED=true}, simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=yn5papcv}], simpUser=org.springframework.security.authentication.UsernamePasswordAuthenticationToken@452579c9: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ADMIN, simpSessionId=yn5papcv}]
+2022-01-24 19:02:54,729 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b] and 1 interceptors
+2022-01-24 19:02:54,730 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/info
+2022-01-24 19:02:54,738 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@5583098b] and 1 interceptors
+2022-01-24 19:02:54,738 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/697/10nexfka/websocket
+2022-01-24 19:02:54,739 TRACE DefaultHandshakeHandler - Processing request http://localhost:8081/websocket/697/10nexfka/websocket with headers=[host:"localhost:8081", connection:"Upgrade", pragma:"no-cache", cache-control:"no-cache", authorization:"Basic YWRtaW46YWRtaW4=", user-agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", upgrade:"websocket", origin:"http://localhost:8081", sec-websocket-version:"13", accept-encoding:"gzip, deflate, br", accept-language:"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d; _ga=GA1.1.1427344683.1606721226; Idea-ed62c9a4=ab95fd81-2bb3-4e75-b3f8-19d0c870b0ef; m=2258:Z3Vlc3Q6Z3Vlc3Q%253D; JSESSIONID=FE5A6277E2C366E54D4D69E4E742D255", sec-websocket-key:"t1H6Ct+Il3zP/afne7Jd8g==", sec-websocket-extensions:"permessage-deflate; client_max_window_bits"]
+2022-01-24 19:02:54,739 TRACE DefaultHandshakeHandler - Upgrading to WebSocket, subProtocol=null, extensions=[]
+2022-01-24 19:02:54,742 DEBUG LoggingWebSocketHandlerDecorator - New WebSocketServerSockJsSession[id=10nexfka]
+2022-01-24 19:02:54,742 TRACE NativeWebSocketSession - Sending TextMessage payload=[o], byteCount=1, last=true], StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:02:54,743 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 10nexfka
+2022-01-24 19:02:54,747 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[CONNECT
+ac..], byteCount=56, last=true] in WebSocketServerSockJsSession[id=10nexfka]
+2022-01-24 19:02:59,714 TRACE StompDecoder - Decoded CONNECT {accept-version=[1.1,1.0], heart-beat=[10000,10000]} session=null
+2022-01-24 19:02:59,715 TRACE StompSubProtocolHandler - From client: CONNECT user=admin session=10nexfka
+2022-01-24 19:03:04,878 DEBUG SimpleBrokerMessageHandler - Processing CONNECT user=admin session=10nexfka
+2022-01-24 19:03:04,879 TRACE StompEncoder - Encoding STOMP CONNECTED, headers={version=[1.1], heart-beat=[0,0], user-name=[admin]}
+2022-01-24 19:03:04,880 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 10nexfka
+2022-01-24 19:03:04,880 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 19:03:04,880 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 19:03:04,880 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["CONNECT..], byteCount=70, last=true], StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:03:04,881 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 10nexfka
+2022-01-24 19:03:04,883 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SUBSCRIBE
+..], byteCount=50, last=true] in WebSocketServerSockJsSession[id=10nexfka]
+2022-01-24 19:03:15,492 TRACE StompDecoder - Decoded SUBSCRIBE {id=[sub-0], destination=[/topic/broadcast]} session=null
+2022-01-24 19:03:15,492 TRACE StompSubProtocolHandler - From client: SUBSCRIBE /topic/broadcast id=sub-0 session=10nexfka
+2022-01-24 19:03:21,682 DEBUG SimpleBrokerMessageHandler - Processing SUBSCRIBE /topic/broadcast id=sub-0 session=10nexfka
+2022-01-24 19:03:29,434 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SEND
+desti..], byteCount=63, last=true] in WebSocketServerSockJsSession[id=10nexfka]
+2022-01-24 19:03:34,242 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:03:34,243 TRACE StompDecoder - Decoded SEND {destination=[/app/broadcast], content-length=[11]} session=null
+2022-01-24 19:03:34,243 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:03:34,244 TRACE StompSubProtocolHandler - From client: SEND /app/broadcast session=10nexfka
+2022-01-24 19:03:34,244 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:03:35,859 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 10nexfka
+2022-01-24 19:03:35,859 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 10nexfka
+2022-01-24 19:03:35,859 DEBUG WebSocketAnnotationMethodMessageHandler - Searching methods to handle SEND /app/broadcast session=10nexfka, lookupDestination='/broadcast'
+2022-01-24 19:03:43,355 TRACE WebSocketAnnotationMethodMessageHandler - Found 1 handler methods: [{[MESSAGE],[/broadcast]}]
+2022-01-24 19:03:43,355 DEBUG WebSocketAnnotationMethodMessageHandler - Invoking MessageResource#broadcast[1 args]
+2022-01-24 19:03:43,355 TRACE HandlerMethod - Arguments: [com.cetc.result.RequestMsg@35d18dc6]
+2022-01-24 19:04:26,773 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:04:27,394 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:04:27,394 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 19:04:27,394 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:04:27,395 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 19:04:27,395 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 10nexfka
+2022-01-24 19:04:27,395 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 10nexfka
+2022-01-24 19:04:27,395 TRACE HandlerMethodReturnValueHandlerComposite - Processing return value with SendToMethodReturnValueHandler [annotationRequired=false]
+2022-01-24 19:04:27,395 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[10nexfka-5]}
+2022-01-24 19:04:27,396 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 10nexfka
+2022-01-24 19:04:27,396 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 19:04:27,396 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 19:04:27,396 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:04:27,396 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session 10nexfka
+2022-01-24 19:04:28,989 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:04:28,990 DEBUG WebSocketServerSockJsSession - Closing SockJS session 10nexfka with CloseStatus[code=1001, reason=null]
+2022-01-24 19:04:28,990 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='c[1001,""]'
+2022-01-24 19:04:28,990 TRACE NativeWebSocketSession - Sending TextMessage payload=[c[1001,""]], byteCount=10, last=true], StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:04:28,990 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session 10nexfka
+2022-01-24 19:04:28,990 DEBUG NativeWebSocketSession - Closing StandardWebSocketSession[id=d1067979-34c8-4eba-d1bd-d9bba0024fb1, uri=ws://localhost:8081/websocket/697/10nexfka/websocket]
+2022-01-24 19:04:28,991 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=10nexfka] closed with CloseStatus[code=1001, reason=null]
+2022-01-24 19:04:28,991 DEBUG SubProtocolWebSocketHandler - Clearing session 10nexfka
+2022-01-24 19:04:28,992 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=10nexfka
+2022-01-24 19:04:28,992 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:04:28,992 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 19:04:28,992 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:04:28,992 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:04:28,992 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:04:28,992 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 19:04:28,992 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:04:28,992 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:07:04,135 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2e09c51
+2022-01-24 19:07:04,135 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 19:07:04,147 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a12c404, started on Mon Jan 24 19:07:02 CST 2022
+2022-01-24 19:07:04,167 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+2022-01-24 19:07:04,172 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 19:07:04,400 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:07:04,400 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:07:04,400 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 19:07:04,400 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:07:04,401 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:07:04,401 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:07:04,401 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 19:07:04,401 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:07:04,401 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:08:04,138 INFO  WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-01-24 19:08:08,553 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2e09c51] and 1 interceptors
+2022-01-24 19:08:08,555 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/info
+2022-01-24 19:08:08,563 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@2e09c51] and 1 interceptors
+2022-01-24 19:08:08,569 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/909/pi47d9im/websocket
+2022-01-24 19:08:08,578 TRACE DefaultHandshakeHandler - Processing request http://localhost:8081/websocket/909/pi47d9im/websocket with headers=[host:"localhost:8081", connection:"Upgrade", pragma:"no-cache", cache-control:"no-cache", authorization:"Basic YWRtaW46YWRtaW4=", user-agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", upgrade:"websocket", origin:"http://localhost:8081", sec-websocket-version:"13", accept-encoding:"gzip, deflate, br", accept-language:"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d; _ga=GA1.1.1427344683.1606721226; Idea-ed62c9a4=ab95fd81-2bb3-4e75-b3f8-19d0c870b0ef; m=2258:Z3Vlc3Q6Z3Vlc3Q%253D; JSESSIONID=39BB011F646B19FAA441A512829B4004", sec-websocket-key:"SeNhrNhwrmZyYG66V679ww==", sec-websocket-extensions:"permessage-deflate; client_max_window_bits"]
+2022-01-24 19:08:08,580 TRACE DefaultHandshakeHandler - Upgrading to WebSocket, subProtocol=null, extensions=[]
+2022-01-24 19:08:08,625 DEBUG LoggingWebSocketHandlerDecorator - New WebSocketServerSockJsSession[id=pi47d9im]
+2022-01-24 19:08:08,629 TRACE NativeWebSocketSession - Sending TextMessage payload=[o], byteCount=1, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:08:08,634 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:08:08,647 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[CONNECT
+ac..], byteCount=56, last=true] in WebSocketServerSockJsSession[id=pi47d9im]
+2022-01-24 19:08:13,765 TRACE StompDecoder - Decoded CONNECT {accept-version=[1.1,1.0], heart-beat=[10000,10000]} session=null
+2022-01-24 19:08:13,765 TRACE StompSubProtocolHandler - From client: CONNECT user=admin session=pi47d9im
+2022-01-24 19:08:15,041 DEBUG SimpleBrokerMessageHandler - Processing CONNECT user=admin session=pi47d9im
+2022-01-24 19:08:15,045 TRACE StompEncoder - Encoding STOMP CONNECTED, headers={version=[1.1], heart-beat=[0,0], user-name=[admin]}
+2022-01-24 19:08:15,046 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:08:15,047 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 19:08:15,047 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\nuser-name:admin\n\n\u0000"]'
+2022-01-24 19:08:15,047 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["CONNECT..], byteCount=70, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:08:15,048 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:08:15,051 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SUBSCRIBE
+..], byteCount=50, last=true] in WebSocketServerSockJsSession[id=pi47d9im]
+2022-01-24 19:08:15,625 TRACE StompDecoder - Decoded SUBSCRIBE {id=[sub-0], destination=[/topic/broadcast]} session=null
+2022-01-24 19:08:15,625 TRACE StompSubProtocolHandler - From client: SUBSCRIBE /topic/broadcast id=sub-0 session=pi47d9im
+2022-01-24 19:08:17,042 DEBUG SimpleBrokerMessageHandler - Processing SUBSCRIBE /topic/broadcast id=sub-0 session=pi47d9im
+2022-01-24 19:08:40,050 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:08:40,050 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:08:40,050 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:08:40,050 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:08:40,050 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:09:05,052 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:09:05,052 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:09:05,052 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:09:05,052 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:09:05,052 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:09:30,053 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:09:30,053 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:09:30,053 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:09:30,053 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:09:30,053 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:09:55,054 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:09:55,054 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:09:55,054 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:09:55,054 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:09:55,054 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:10:20,056 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:10:20,056 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:10:20,056 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:10:20,056 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:10:20,057 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session pi47d9im
+2022-01-24 19:10:28,296 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:10:28,296 DEBUG WebSocketServerSockJsSession - Closing SockJS session pi47d9im with CloseStatus[code=1001, reason=null]
+2022-01-24 19:10:28,296 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='c[1001,""]'
+2022-01-24 19:10:28,297 TRACE NativeWebSocketSession - Sending TextMessage payload=[c[1001,""]], byteCount=10, last=true], StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:10:28,297 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session pi47d9im
+2022-01-24 19:10:28,297 DEBUG NativeWebSocketSession - Closing StandardWebSocketSession[id=6e1d6ef3-4982-bd1f-968c-490a19d4a866, uri=ws://localhost:8081/websocket/909/pi47d9im/websocket]
+2022-01-24 19:10:28,298 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=pi47d9im] closed with CloseStatus[code=1001, reason=null]
+2022-01-24 19:10:28,298 DEBUG SubProtocolWebSocketHandler - Clearing session pi47d9im
+2022-01-24 19:10:28,299 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=pi47d9im
+2022-01-24 19:10:28,300 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:10:28,300 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 19:10:28,300 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:10:28,300 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:10:28,300 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:10:28,300 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 19:10:28,300 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:10:28,300 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:10:35,521 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@1ab5f08a
+2022-01-24 19:10:35,521 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 19:10:35,556 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5829e4f4, started on Mon Jan 24 19:10:34 CST 2022
+2022-01-24 19:10:35,580 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+2022-01-24 19:10:35,586 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 19:10:36,008 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:10:36,009 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:10:36,009 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 19:10:36,009 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:10:36,009 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:10:36,009 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:10:36,009 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 19:10:36,009 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:10:36,009 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:11:35,526 INFO  WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-01-24 19:11:54,536 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:11:54,536 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:11:54,537 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 19:11:54,537 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:11:54,537 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:11:54,537 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:11:54,537 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 19:11:54,537 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:11:54,537 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:12:09,676 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@181d8899
+2022-01-24 19:12:09,677 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 19:12:09,705 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a6f2de3, started on Mon Jan 24 19:12:08 CST 2022
+2022-01-24 19:12:09,727 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+2022-01-24 19:12:09,734 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 19:12:10,142 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:12:10,143 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:12:10,143 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 19:12:10,143 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:12:10,143 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:12:10,143 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:12:10,143 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 19:12:10,143 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:12:10,143 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:13:09,681 INFO  WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-01-24 19:14:20,900 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:14:20,900 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:14:20,900 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 19:14:20,901 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:14:20,901 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:14:20,901 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:14:20,901 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 19:14:20,901 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:14:20,901 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:14:26,740 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@7b306b9f
+2022-01-24 19:14:26,741 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 19:14:26,780 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@d3957fe, started on Mon Jan 24 19:14:25 CST 2022
+2022-01-24 19:14:26,808 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+2022-01-24 19:14:26,813 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 19:14:27,194 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:14:27,194 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:14:27,194 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 19:14:27,194 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:14:27,194 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:14:27,194 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:14:27,194 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 19:14:27,195 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:14:27,195 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:14:50,199 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:14:50,199 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:14:50,199 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 19:14:50,199 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:14:50,200 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:14:50,200 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:14:50,200 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 19:14:50,200 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:14:50,200 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:15:15,897 TRACE WebSocketHandlerMapping - Mapped [/websocket/**] onto org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@312b34e3
+2022-01-24 19:15:15,898 DEBUG WebSocketHandlerMapping - Patterns [/websocket/**] in 'stompWebSocketHandlerMapping'
+2022-01-24 19:15:15,928 TRACE WebSocketAnnotationMethodMessageHandler - Looking for @MessageExceptionHandler mappings: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6dee4f1b, started on Mon Jan 24 19:15:14 CST 2022
+2022-01-24 19:15:15,951 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	c.c.r.MessageResource:
+	{[SUBSCRIBE],[/subscribe/{id}]}: subscribe(Long)
+	{[MESSAGE],[/one]}: one(RequestMsg,Principal)
+	{[MESSAGE],[/broadcast]}: broadcast(RequestMsg)
+2022-01-24 19:15:15,956 DEBUG WebSocketAnnotationMethodMessageHandler - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2022-01-24 19:15:16,145 DEBUG ExecutorSubscribableChannel - clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:15:16,146 DEBUG ExecutorSubscribableChannel - clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:15:16,146 INFO  SimpleBrokerMessageHandler - Starting...
+2022-01-24 19:15:16,146 DEBUG ExecutorSubscribableChannel - clientInboundChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:15:16,147 DEBUG ExecutorSubscribableChannel - brokerChannel added SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]
+2022-01-24 19:15:16,147 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:15:16,147 INFO  SimpleBrokerMessageHandler - Started.
+2022-01-24 19:15:16,148 DEBUG ExecutorSubscribableChannel - clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:15:16,148 DEBUG ExecutorSubscribableChannel - brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:16:14,675 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 19:16:33,652 INFO  WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2022-01-24 19:16:47,526 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@312b34e3] and 1 interceptors
+2022-01-24 19:16:47,529 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/info
+2022-01-24 19:16:47,538 TRACE WebSocketHandlerMapping - Mapped to HandlerExecutionChain with [org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@312b34e3] and 1 interceptors
+2022-01-24 19:16:47,544 DEBUG DefaultSockJsService - Processing transport request: GET http://localhost:8081/websocket/637/p1dws0oh/websocket
+2022-01-24 19:16:47,551 TRACE DefaultHandshakeHandler - Processing request http://localhost:8081/websocket/637/p1dws0oh/websocket with headers=[host:"localhost:8081", connection:"Upgrade", pragma:"no-cache", cache-control:"no-cache", authorization:"Basic YWRtaW46YWRtaW4=", user-agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36", upgrade:"websocket", origin:"http://localhost:8081", sec-websocket-version:"13", accept-encoding:"gzip, deflate, br", accept-language:"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", cookie:"XXL_JOB_LOGIN_IDENTITY=7b226964223a312c22757365726e616d65223a2261646d696e222c2270617373776f7264223a226531306164633339343962613539616262653536653035376632306638383365222c22726f6c65223a312c227065726d697373696f6e223a6e756c6c7d; _ga=GA1.1.1427344683.1606721226; Idea-ed62c9a4=ab95fd81-2bb3-4e75-b3f8-19d0c870b0ef; JSESSIONID=8A9C37C60E874B2A36819E48A6EEF363", sec-websocket-key:"OKuanfV35C+NU+2+JK3ntg==", sec-websocket-extensions:"permessage-deflate; client_max_window_bits"]
+2022-01-24 19:16:47,553 TRACE DefaultHandshakeHandler - Upgrading to WebSocket, subProtocol=null, extensions=[]
+2022-01-24 19:16:47,598 DEBUG LoggingWebSocketHandlerDecorator - New WebSocketServerSockJsSession[id=p1dws0oh]
+2022-01-24 19:16:47,602 TRACE NativeWebSocketSession - Sending TextMessage payload=[o], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:16:47,607 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:16:47,670 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[CONNECT
+ac..], byteCount=56, last=true] in WebSocketServerSockJsSession[id=p1dws0oh]
+2022-01-24 19:16:54,546 TRACE StompDecoder - Decoded CONNECT {accept-version=[1.1,1.0], heart-beat=[10000,10000]} session=null
+2022-01-24 19:16:54,547 TRACE StompSubProtocolHandler - From client: CONNECT session=p1dws0oh
+2022-01-24 19:17:05,720 DEBUG SimpleBrokerMessageHandler - Processing CONNECT session=p1dws0oh
+2022-01-24 19:17:05,725 TRACE StompEncoder - Encoding STOMP CONNECTED, headers={version=[1.1], heart-beat=[0,0]}
+2022-01-24 19:17:05,726 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:17:05,726 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\n\n\u0000"]'
+2022-01-24 19:17:05,726 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["CONNECTED\nversion:1.1\nheart-beat:0,0\n\n\u0000"]'
+2022-01-24 19:17:05,727 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["CONNECT..], byteCount=53, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:17:05,727 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:17:05,730 TRACE LoggingWebSocketHandlerDecorator - Handling TextMessage payload=[SUBSCRIBE
+..], byteCount=50, last=true] in WebSocketServerSockJsSession[id=p1dws0oh]
+2022-01-24 19:17:08,056 TRACE StompDecoder - Decoded SUBSCRIBE {id=[sub-0], destination=[/topic/broadcast]} session=null
+2022-01-24 19:17:08,056 TRACE StompSubProtocolHandler - From client: SUBSCRIBE /topic/broadcast id=sub-0 session=p1dws0oh
+2022-01-24 19:17:10,751 DEBUG SimpleBrokerMessageHandler - Processing SUBSCRIBE /topic/broadcast id=sub-0 session=p1dws0oh
+2022-01-24 19:17:30,755 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:17:31,739 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:17:32,131 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:17:32,762 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:17:32,763 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:17:32,762 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 19:17:36,710 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 19:18:00,252 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:18:02,616 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:18:02,616 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:18:02,617 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:18:02,618 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:18:16,549 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[p1dws0oh-0]}
+2022-01-24 19:18:16,550 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:18:16,550 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 19:18:16,550 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 19:18:16,551 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:18:16,551 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:18:41,656 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:18:42,017 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:18:43,847 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:18:43,847 DEBUG SimpleBrokerMessageHandler - Processing MESSAGE destination=/topic/broadcast session=null payload=test
+2022-01-24 19:18:43,847 DEBUG SimpleBrokerMessageHandler - Broadcasting to 1 sessions.
+2022-01-24 19:18:43,847 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:19:39,625 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:20:17,254 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:20:17,254 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:20:17,254 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:20:17,254 TRACE StompEncoder - Encoding STOMP MESSAGE, headers={destination=[/topic/broadcast], content-type=[text/plain;charset=UTF-8], subscription=[sub-0], message-id=[p1dws0oh-1]}
+2022-01-24 19:20:17,254 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:20:17,254 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:20:17,255 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:20:17,255 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 19:20:17,255 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='a["MESSAGE\ndestination:/topic/broadcast\ncontent-type:text/plain;charset=UTF-8\...(truncated)'
+2022-01-24 19:20:17,255 TRACE NativeWebSocketSession - Sending TextMessage payload=[a["MESSAGE..], byteCount=156, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:20:17,255 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:20:42,258 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:20:42,258 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:20:42,258 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:20:42,258 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:20:42,258 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:21:07,259 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:21:07,259 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:21:07,259 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:21:07,259 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:21:07,259 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:21:32,261 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:21:32,261 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:21:32,261 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:21:32,261 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:21:32,262 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:21:57,263 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:21:57,263 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:21:57,263 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:21:57,263 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:21:57,263 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:22:22,265 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:22:22,265 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:22:22,265 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:22:22,265 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:22:22,265 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:22:47,265 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:22:47,265 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:22:47,265 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:22:47,265 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:22:47,266 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:23:12,267 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:23:12,267 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:23:12,267 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:23:12,267 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:23:12,267 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:23:37,269 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:23:37,269 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:23:37,269 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:23:37,269 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:23:37,269 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:24:02,271 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:24:02,271 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:24:02,271 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:24:02,271 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:24:02,271 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:24:27,273 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:24:27,273 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:24:27,273 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:24:27,273 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:24:27,273 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:24:52,274 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:24:52,274 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:24:52,274 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:24:52,274 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:24:52,274 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:25:17,274 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:25:17,274 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:25:17,274 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:25:17,274 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:25:17,274 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:25:42,276 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:25:42,276 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:25:42,276 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:25:42,276 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:25:42,276 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:26:07,277 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:26:07,277 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:26:07,277 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:26:07,277 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:26:07,277 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:26:32,278 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:26:32,278 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:26:32,278 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:26:32,278 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:26:32,278 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:26:57,279 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:26:57,279 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:26:57,279 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:26:57,279 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:26:57,279 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:27:22,282 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:27:22,282 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:27:22,282 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:27:22,282 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:27:22,282 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:27:47,282 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:27:47,282 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:27:47,282 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:27:47,282 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:27:47,282 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:28:12,284 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:28:12,284 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:28:12,284 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:28:12,284 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:28:12,284 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:28:37,287 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:28:37,287 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:28:37,287 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:28:37,287 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:28:37,287 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:29:02,289 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:29:02,289 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:29:02,289 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:29:02,289 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:29:02,289 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:29:27,291 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:29:27,291 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:29:27,291 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:29:27,291 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:29:27,291 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:29:52,292 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:29:52,292 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:29:52,292 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:29:52,292 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:29:52,292 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:30:17,293 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:30:17,293 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:30:17,293 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:30:17,293 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:30:17,293 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:30:42,294 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:30:42,294 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:30:42,294 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:30:42,295 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:30:42,295 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:31:07,296 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:31:07,296 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:31:07,296 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:31:07,296 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:31:07,296 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:31:32,297 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:31:32,297 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:31:32,297 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:31:32,297 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:31:32,297 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:31:57,298 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:31:57,298 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:31:57,298 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:31:57,298 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:31:57,298 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:32:22,299 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:32:22,299 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:32:22,299 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:32:22,299 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:32:22,299 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:32:47,302 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:32:47,302 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:32:47,302 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:32:47,302 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:32:47,303 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:33:12,303 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:33:12,303 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:33:12,303 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:33:12,303 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:33:12,303 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:33:37,304 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:33:37,304 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:33:37,304 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:33:37,304 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:33:37,304 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:34:02,306 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:34:02,306 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:34:02,306 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:34:02,306 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:34:02,306 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:34:27,307 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:34:27,307 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:34:27,307 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:34:27,307 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:34:27,307 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:34:52,309 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:34:52,309 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:34:52,309 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:34:52,309 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:34:52,309 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:35:17,310 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:35:17,310 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:35:17,310 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:35:17,310 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:35:17,311 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:35:42,311 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:35:42,311 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:35:42,311 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:35:42,311 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:35:42,311 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:36:07,312 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:36:07,312 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:36:07,312 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:36:07,312 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:36:07,312 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:36:32,313 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:36:32,313 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:36:32,313 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:36:32,313 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:36:32,313 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:36:57,314 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:36:57,314 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:36:57,314 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:36:57,314 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:36:57,314 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:37:22,317 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:37:22,317 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:37:22,317 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:37:22,317 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:37:22,317 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:37:47,318 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:37:47,318 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:37:47,318 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:37:47,319 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:37:47,319 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:38:12,321 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:38:12,321 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:38:12,321 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:38:12,321 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:38:12,321 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:38:37,322 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:38:37,322 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:38:37,322 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:38:37,322 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:38:37,322 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:39:02,324 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:39:02,324 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:39:02,324 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:39:02,324 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:39:02,324 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:39:27,325 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:39:27,325 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:39:27,325 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:39:27,325 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:39:27,325 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:39:52,326 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:39:52,326 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:39:52,326 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:39:52,326 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:39:52,326 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:40:17,328 TRACE WebSocketServerSockJsSession - Preparing to write SockJsFrame content='h'
+2022-01-24 19:40:17,328 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='h'
+2022-01-24 19:40:17,328 TRACE NativeWebSocketSession - Sending TextMessage payload=[h], byteCount=1, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:40:17,328 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:40:17,328 TRACE WebSocketServerSockJsSession - Scheduled heartbeat in session p1dws0oh
+2022-01-24 19:40:20,237 DEBUG ExecutorSubscribableChannel - clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2022-01-24 19:40:20,237 DEBUG WebSocketServerSockJsSession - Closing SockJS session p1dws0oh with CloseStatus[code=1001, reason=null]
+2022-01-24 19:40:20,237 TRACE WebSocketServerSockJsSession - Writing SockJsFrame content='c[1001,""]'
+2022-01-24 19:40:20,237 TRACE NativeWebSocketSession - Sending TextMessage payload=[c[1001,""]], byteCount=10, last=true], StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:40:20,237 TRACE WebSocketServerSockJsSession - Cancelling heartbeat in session p1dws0oh
+2022-01-24 19:40:20,237 DEBUG NativeWebSocketSession - Closing StandardWebSocketSession[id=1671f025-4980-b36e-4a2e-95a612cc5847, uri=ws://localhost:8081/websocket/637/p1dws0oh/websocket]
+2022-01-24 19:40:20,238 DEBUG LoggingWebSocketHandlerDecorator - WebSocketServerSockJsSession[id=p1dws0oh] closed with CloseStatus[code=1001, reason=null]
+2022-01-24 19:40:20,238 DEBUG SubProtocolWebSocketHandler - Clearing session p1dws0oh
+2022-01-24 19:40:20,239 DEBUG SimpleBrokerMessageHandler - Processing DISCONNECT session=p1dws0oh
+2022-01-24 19:40:20,239 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2022-01-24 19:40:20,239 INFO  SimpleBrokerMessageHandler - Stopping...
+2022-01-24 19:40:20,239 INFO  SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[1 destination(s)], registry[0 sessions]]]]
+2022-01-24 19:40:20,240 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[1 destination(s)], registry[0 sessions]]]
+2022-01-24 19:40:20,240 DEBUG ExecutorSubscribableChannel - brokerChannel removed SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[1 destination(s)], registry[0 sessions]]]
+2022-01-24 19:40:20,240 INFO  SimpleBrokerMessageHandler - Stopped.
+2022-01-24 19:40:20,240 DEBUG ExecutorSubscribableChannel - clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2022-01-24 19:40:20,240 DEBUG ExecutorSubscribableChannel - brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]

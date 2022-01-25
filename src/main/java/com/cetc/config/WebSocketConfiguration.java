@@ -37,10 +37,7 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
     //这里使用的是内存模式，生产环境可以使用rabbitmq或者其他mq。
     //这里注册两个，主要是目的是将广播和队列分开。
     //registry.enableStompBrokerRelay().setRelayHost().setRelayPort() 其他方式
-    registry.enableStompBrokerRelay("/topic", "/queue")
-        .setRelayHost("localhost")
-        .setUserRegistryBroadcast("/topic/user-registry")
-        .setUserDestinationBroadcast("/topic/unresolved-user");
+    registry.enableSimpleBroker("/topic", "/queue");
     //客户端名称前缀
     registry.setApplicationDestinationPrefixes("/app");
 
